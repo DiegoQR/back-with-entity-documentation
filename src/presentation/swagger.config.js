@@ -1,4 +1,6 @@
 const swaggerJSDoc = require('swagger-jsdoc');
+const Role = require('../domain/entities/role.entity');
+const Product = require('../domain/entities/product.entity');
 
 const swaggerDefinition = {
   openapi: '3.0.0',
@@ -67,6 +69,90 @@ const swaggerDefinition = {
               type: 'string'
             },
             example: ['user']
+          }
+        }
+      },
+      Role: {
+        type: 'object',
+        properties: {
+          id: {
+            type: 'string',
+            example: '60c72b2f9b1e8a001f8e4cab'
+          },
+          name: {
+            type: 'string',
+            example: 'admin'
+          }
+        }
+      },
+      RoleInput: {
+        type: 'object',
+        properties: {
+          name: {
+            type: 'string',
+            example: 'admin'
+          }
+        }
+      },
+      Product: {
+        type: 'object',
+        properties: {
+          id: {
+            type: 'string',
+            example: '60c72b2f9b1e8a001f8e4cad'
+          },
+          name: {
+            type: 'string',
+            example: 'Celular IPhone 13'
+          },
+          description: {
+            type: 'string',
+            example: 'Celular IPhone 13, 128GB, color negro.'
+          },
+          price: {
+            type: 'number',
+            example: 899.99
+          },
+          stock: {
+            type: 'integer',
+            example: 100
+          },
+          category: {
+            type: 'string',
+            example: 'Electronics'
+          },
+          imageUrl: {
+            type: 'string',
+            example: 'http://example.com/image.jpg'
+          }
+        }
+      },
+      ProductInput: {
+        type: 'object',
+        properties: {
+          name: {
+            type: 'string',
+            example: 'Celular IPhone 13'
+          },
+          description: {
+            type: 'string',
+            example: 'Celular IPhone 13, 128GB, color negro.'
+          },
+          price: {
+            type: 'number',
+            example: 899.99
+          },
+          stock: {
+            type: 'integer',
+            example: 100
+          },
+          category: {
+            type: 'string',
+            example: 'Electronics'
+          },
+          imageUrl: {
+            type: 'string',
+            example: 'http://example.com/image.jpg'
           }
         }
       }

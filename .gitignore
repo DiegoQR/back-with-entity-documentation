@@ -1,6 +1,9 @@
 # Dependencias
 node_modules/
 
+# Configuracion de VsCode
+.vscode/
+
 # Variables de entorno
 .env
 
