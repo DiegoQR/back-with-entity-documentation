@@ -16,6 +16,8 @@ const router = Router();
  * @swagger
  * /users:
  *   get:
+ *     tags:
+ *       - Users
  *     summary: Retrieve a list of users
  *     responses:
  *       200:
@@ -33,6 +35,8 @@ router.get('/', asyncHandler(userController.getAll));
  * @swagger
  * /users/{id}:
  *   get:
+ *     tags:
+ *       - Users
  *     summary: Retrieve a single user by ID
  *     parameters:
  *       - in: path
@@ -56,6 +60,8 @@ router.get('/:id', asyncHandler(userController.getById));
  * @swagger
  * /users:
  *   post:
+ *     tags:
+ *       - Users
  *     summary: Create a new user
  *     requestBody:
  *       required: true
@@ -81,6 +87,8 @@ router.post('/', asyncHandler(userController.create));
  * @swagger
  * /users/{id}:
  *   put:
+ *     tags:
+ *       - Users
  *     summary: Update a user
  *     parameters:
  *       - in: path
@@ -110,6 +118,8 @@ router.put('/:id', asyncHandler(userController.update));
  * @swagger
  * /users/{id}:
  *   delete:
+ *     tags:
+ *       - Users
  *     summary: Delete a user
  *     parameters:
  *       - in: path

@@ -9,6 +9,20 @@ const swaggerDefinition = {
     version: '1.0.0',
     description: 'Documentation for the API',
   },
+  tags: [
+    {
+      name: 'Users',
+      description: 'Operations related to users',
+    },
+    {
+      name: 'Roles',
+      description: 'Operations related to roles',
+    },
+    {
+      name: 'Products',
+      description: 'Operations related to products',
+    },
+  ],
   servers: [
     {
       url: `http://localhost:${process.env.PORT || 8080}/api/v1`,
