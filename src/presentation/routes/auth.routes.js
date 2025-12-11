@@ -36,7 +36,25 @@ const asyncHandler = require('../utils/async.handler');
  *               properties:
  *                 token:
  *                   type: string
- *                   example: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+ *                   example: example.jwt.token.here
+ *                 user:
+ *                   type: object
+ *                   properties:
+ *                    id:
+ *                      type: string
+ *                      example: 60c72b2f9b1e8a001f8e4cab
+ *                    name:
+ *                     type: string
+ *                     example: John Doe
+ *                    email: 
+ *                      type: string
+ *                      example: jhon.doe@example.com
+ *                    roles:
+ *                     type: array
+ *                     items:
+ *                      type: string
+ *                     example: ['admin']
+ * 
  *       400:
  *         description: Bad request
  *       401:

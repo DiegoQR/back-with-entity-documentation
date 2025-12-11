@@ -11,6 +11,10 @@ const swaggerDefinition = {
   },
   tags: [
     {
+      name: 'Authentication',
+      description: 'Operations related to authentication',
+    },
+    {
       name: 'Users',
       description: 'Operations related to users',
     },
@@ -21,10 +25,6 @@ const swaggerDefinition = {
     {
       name: 'Products',
       description: 'Operations related to products',
-    },
-    {
-      name: 'Authentication',
-      description: 'Operations related to authentication',
     }
   ],
   servers: [
@@ -75,7 +75,7 @@ const swaggerDefinition = {
           },
           email: {
             type: 'string',
-            example: 'jhon.doe@exmaple.com'
+            example: 'jhon.doe@example.com'
           },
           password: {
             type: 'string',
