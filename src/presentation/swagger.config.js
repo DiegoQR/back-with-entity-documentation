@@ -22,6 +22,10 @@ const swaggerDefinition = {
       name: 'Products',
       description: 'Operations related to products',
     },
+    {
+      name: 'Authentication',
+      description: 'Operations related to authentication',
+    }
   ],
   servers: [
     {
@@ -58,7 +62,7 @@ const swaggerDefinition = {
             items: {
               type: 'string'
             },
-            example: ['user']
+            example: ['admin']
           }
         }
       },
@@ -82,7 +86,7 @@ const swaggerDefinition = {
             items: {
               type: 'string'
             },
-            example: ['user']
+            example: ['admin']
           }
         }
       },

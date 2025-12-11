@@ -80,6 +80,8 @@ router.get('/:id', asyncHandler(userController.getById));
  *         description: Bad request
  *       409:
  *         description: User with this email already exists
+ *       404:
+ *         description: Role not found
  */
 router.post('/', asyncHandler(userController.create));
 
